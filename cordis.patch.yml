@@ -1,0 +1,7 @@
+# Bundle layer of dsh-screenshot-plugin.
+#
+# Registered as a profile bundle (`dsh.profile.bundles`), so the host half and
+# the client half are mounted by the loader like any shipped plugin.
+- insert:
+    - id: ui-screenshot
+      name: dsh-screenshot-plugin

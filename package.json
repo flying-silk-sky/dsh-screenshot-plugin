@@ -1,0 +1,55 @@
+{
+  "name": "dsh-screenshot-plugin",
+  "version": "0.1.0",
+  "description": "Doubao-style screenshot-to-ask control for the DSH Web GUI: capture the screen (optionally hiding the window first), pick a region, and attach it to the composer draft.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/capture.ps1",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "screen-capture",
+    "composer",
+    "ui"
+  ],
+  "license": "MIT",
+  "author": "flying-silk-sky (https://github.com/flying-silk-sky)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flying-silk-sky/dsh-screenshot-plugin.git"
+  },
+  "homepage": "https://github.com/flying-silk-sky/dsh-screenshot-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/flying-silk-sky/dsh-screenshot-plugin/issues"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "dependencies": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
